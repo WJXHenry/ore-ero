@@ -145,6 +145,9 @@ AdminCode:
 AdminCodeDesc:
   en: The code for the Canadian public administration. See the <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">data files</a> to find your administration.
   fr: Le code de l'administration publique Canadienne. Consultez les <a href="https://github.com/canada-ca/ore-ero/tree/master/_data/administrations">fichier de données</a> pour trouver votre administration.
+ProvinceCode:
+  en: Province Code
+  fr: Code de province
 RealeasesCodeDesc:
   en: Information for each project or source code published.
   fr: Informations pour chaque projet ou code source publié.
@@ -427,6 +430,12 @@ FormSubmissionFail:
 FormSubmissionSuccess:
   en: Form was submitted!
   fr: Le formulaire a été soumis!
+SubmitButton:
+  en: Submit
+  fr: Soumettre
+ResetButton:
+  en: Reset
+  fr: Réinitialiser
 
 # Open Soruce Software (Schema and Form)
 SchemaVersionOssDesc:

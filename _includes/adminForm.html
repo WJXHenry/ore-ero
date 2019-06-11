@@ -5,8 +5,8 @@
         <label for="orgLevel" class="required">{{ site.LevelOfGovernment[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
         <select class="form-control" id="orgLevel" name="orgLevel" required="required">
             <option value="">&nbsp;</option>
-            <option value="federal" disabled>Federal</option>
-            <option value="provincial" disabled>Provincial</option>
+            <option value="federal" >Federal</option>
+            <option value="provincial" >Provincial</option>
             <option value="municipal" selected>Municipal</option>
         </select>
     </div>
@@ -17,9 +17,9 @@
         <input class="form-control" id="adminCode" name="adminCode" type="text" required="required"/>
     </div>
     
-    <h2>Province Code</h2>
+    <h2>{{ site.ProvinceCode[page.lang] }}</h2>
     <div class="form-group">      
-        <label for="provinceCode" class="required">Province Code <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
+        <label for="provinceCode" class="required">{{ site.ProvinceCode[page.lang] }} <strong class="required">({{ site.MandatoryField[page.lang] }})</strong></label>
         <input class="form-control" id="provinceCode" name="provinceCode" type="text" required="required"/>
     </div>
     
@@ -43,8 +43,8 @@
         <input class="form-control" id="submitterEmail" name="submitterEmail" type="email" required="required"/>
     </div>
     
-    <button id="adminPrbotSubmit" type="button" class="btn btn-primary">Submit</button>
-    <button id="adminCodeFormReset" type="reset" class="btn btn-default">Reset</button>
+    <button id="adminPrbotSubmit" type="button" class="btn btn-primary">{{ site.SubmitButton[page.lang] }}</button>
+    <button id="adminCodeFormReset" type="reset" class="btn btn-default">{{ site.ResetButton[page.lang] }}</button>
     
     <div style="margin-top: 10px">
         <div id="prbotSubmitAlertInProgress" class="alert alert-warning" style="display: none">
