@@ -3,7 +3,7 @@
 // @author j-rewerts
 
 /* exported DeepObject */
-const DeepObject = {
+export const DeepObject = {
   /**
    * Attempts to get the object at path.
    * @param {Object} obj The Object to try to find.

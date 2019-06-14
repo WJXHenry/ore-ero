@@ -1,4 +1,6 @@
 /* global jsyaml DeepObject */
+import jsyaml from 'js-yaml';
+import { DeepObject } from './deep-object';
 
 /* exported FileWriter */
 class FileWriter {
@@ -48,7 +50,7 @@ class FileWriter {
 }
 
 /* exported YamlWriter */
-class YamlWriter extends FileWriter {
+export class YamlWriter extends FileWriter {
   /**
    * Helps make reading and writing YAML files in GitHub easier.
    * @param {String} user The username where the repo is hosted (canada-ca).

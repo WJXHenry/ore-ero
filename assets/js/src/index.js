@@ -1,6 +1,13 @@
 // Put code in here.
 // Embed this at the bottom of the body.
 /* global $ YamlWriter USERNAME REPO_NAME jsyaml PRBOT_URL */
+import $ from 'jquery';
+import jsyaml from 'js-yaml';
+import { addCustomFormValidations } from './custom-form-validation';
+import { YamlWriter } from './git-file-manager';
+
+// Add custom form validations
+addCustomFormValidations();
 
 function getSelectedOrgType() {
   return $('#adminCode :selected')
