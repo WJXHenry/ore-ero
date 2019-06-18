@@ -45,3 +45,5 @@ const DeepObject = {
     obj[path[i]] = value;
   }
 };
+
+module.exports = DeepObject;

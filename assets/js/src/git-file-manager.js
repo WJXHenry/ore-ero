@@ -1,4 +1,6 @@
 /* global jsyaml DeepObject */
+const jsyaml = require('js-yaml');
+const DeepObject = require('./deep-object');
 
 /* exported FileWriter */
 class FileWriter {
@@ -136,3 +138,5 @@ class YamlWriter extends FileWriter {
     });
   }
 }
+
+module.exports = YamlWriter;

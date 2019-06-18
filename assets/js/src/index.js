@@ -1,6 +1,13 @@
 // Put code in here.
 // Embed this at the bottom of the body.
 /* global $ YamlWriter USERNAME REPO_NAME jsyaml PRBOT_URL */
+const $ = require('jquery');
+const jsyaml = require('js-yaml');
+const addCustomFormValidations = require('./custom-form-validation');
+const YamlWriter = require('./git-file-manager');
+
+ // Add custom form validations
+addCustomFormValidations();
 
 function getSelectedOrgType() {
   return $('#adminCode :selected')
@@ -237,8 +244,11 @@ function getTags(query) {
  */
 function validateRequired() {
   let form = document.getElementById('validation');
-  let elements = form.elements;
+  console.log(form)
   let validator = $('#validation').validate();
+  console.log(validator)
+  let elements = form.elements;
+  console.log(elements)
   let isValid = true;
   for (let i = 0; i < elements.length; i++) {
     let currentElement = elements[i];
